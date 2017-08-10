@@ -26,7 +26,7 @@ function TrainingPlan(totalMiles, longestRun) {
       return training.totalMiles;
     },
     skipRun: function(){
-      console.log('fitness: ', training.fitness);
+      console.log('fitness before: ', training.fitness);
       training.fitness -= 1;
       console.log('fitness after: ', training.fitness);
     }
