@@ -8,11 +8,9 @@ function TrainingPlan(totalMiles, longestRun) {
 
   return {
     getTotalMiles: function(){
-      console.log(training.totalMiles);
       return training.totalMiles;
     },
     getLongRun: function(){
-      console.log(training.longestRun);
       return training.longestRun;
     },
     goRun: function(miles){
@@ -21,14 +19,10 @@ function TrainingPlan(totalMiles, longestRun) {
       if (training.longestRun < miles){
         training.longestRun = miles;
       }
-      console.log('fitness: ', training.fitness);
-      console.log('totalMiles: ', training.totalMiles);
       return training.totalMiles;
     },
     skipRun: function(){
-      console.log('fitness before: ', training.fitness);
       training.fitness -= 1;
-      console.log('fitness after: ', training.fitness);
     }
   };
 }
